@@ -1,59 +1,46 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.popup-container {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
+.card-input-container {
+    width: 320px;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
 }
 
-#closePopup {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #007BFF;
+.card-input {
+    margin-bottom: 10px;
+}
+
+.card-input label {
+    display: block;
+    font-weight: bold;
+}
+
+.card-input input[type="text"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.card-input input[type="text"]::placeholder {
+    color: #999;
+}
+
+.card-icon {
+    filter: grayscale(100%);
+}
+
+#check-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #483b83;
     color: #fff;
     border: none;
+    border-radius: 3px;
+    font-size: 16px;
     cursor: pointer;
-}
-
-.game-container {
-    display: grid;
-    grid-template-columns: repeat(4, 120px);
-    grid-gap: 10px;
-}
-
-.score-container {
-  position: absolute;
-  top: 10px;
-  left: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 18px;
-}
-
-.cell {
-    width: 120px;
-    height: 120px;
-    border: 1px solid #000;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 24px;
-}
-
-#character {
-    position: inherit;
 }
