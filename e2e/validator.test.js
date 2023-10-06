@@ -35,7 +35,7 @@ describe('Inn Form', () => {
   //     await page.waitFor('.innogrn-form-widget .input.valid')
   //   })
 
-  afterEach(async () => {
-    await browser.close()
-  })
+//   afterEach(async () => {
+//     await browser.close()
+//   })
 })
