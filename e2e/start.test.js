@@ -6,7 +6,7 @@ describe('Page start', () => {
 
   beforeEach(async () => {
     browser = await puppeteer.launch({
-      headless: 'new',
+      headless: true,
       slowMo: 100,
       devtools: true
     })
