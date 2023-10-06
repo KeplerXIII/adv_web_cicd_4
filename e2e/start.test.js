@@ -8,7 +8,8 @@ describe('Page start', () => {
     browser = await puppeteer.launch({
       headless: 'new',
       slowMo: 100,
-      devtools: true
+      devtools: true,
+      userDataDir: './.cache/puppeteer'
     })
 
     page = await browser.newPage()
