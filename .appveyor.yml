@@ -10,6 +10,7 @@ cache: node_modules  # кеширование
 
 install:
   - yarn install  # команда установки зависимостей
+  - puppeteer_cache_dir=".cache/puppeteer/chrome/"
 
 
 build: off  # отключаем встроенную в appveyor систему сборки
