@@ -1,2 +1,2 @@
-Build status: [![Build status](https://ci.appveyor.com/api/projects/status/dvydp9gy88xtsc3l?svg=true)](https://ci.appveyor.com/project/KeplerXIII/adv-web-cicd-2)  
-Site link: [Github pages - Whack Game](https://keplerxiii.github.io/adv_web_cicd_2/)
+Build status: [![Build status](https://ci.appveyor.com/api/projects/status/2r5u8djndh4wwo8k?svg=true)](https://ci.appveyor.com/project/KeplerXIII/adv-web-cicd-2)  
+Site link: [Github pages - Whack Game](https://keplerxiii.github.io/adv_web_cicd_4/)
