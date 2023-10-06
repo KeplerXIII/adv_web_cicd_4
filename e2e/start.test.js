@@ -21,7 +21,7 @@ describe('Page start', () => {
     await page.waitForSelector('body')
   })
 
-//   afterEach(async () => {
-//     await browser.close()
-//   })
+   afterEach(async () => {
+     await browser.close()
+   })
 })
