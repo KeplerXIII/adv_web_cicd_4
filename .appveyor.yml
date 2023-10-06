@@ -9,7 +9,6 @@ branches:
 cache: node_modules  # кеширование
 
 install:
-  - sudo apt-get install google-chrome-stable
   - yarn install  # команда установки зависимостей
 
 
