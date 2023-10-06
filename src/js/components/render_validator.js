@@ -6,13 +6,13 @@ export class RenderValidator {
   constructor () {
     this.html = `
         <div class="card-input-container">
-          <img src=${mir} alt="Visa" class="card-icon" id="mir">
-          <img src=${visa} alt="Visa" class="card-icon" id="visa">
-          <img src=${mastercard} alt="Mastercard" class="card-icon" id="mastercard">
+          <img src=${mir} alt="Mir" class="card-icon mir">
+          <img src=${visa} alt="Visa" class="card-icon visa">
+          <img src=${mastercard} alt="Mastercard" class="card-icon mastercard">
           <div class="card-input">
             <input type="text" class="input-field "id="card-number" name="card-number" placeholder="Введите номер карты" maxlength="16">
           </div>
-            <button id="check-button">Проверить</button>
+            <button id="check-button" class ="submit">Проверить</button>
         </div>
         `
   }

@@ -12,16 +12,16 @@ export class Validation {
     this.inputField.addEventListener('input', () => {
       const cardNumber = this.inputField.value
 
+      this.elem.querySelectorAll('img').forEach(element => {
+        element.classList.remove('active')
+      })
+
       if (this.visaPattern.test(cardNumber)) {
-        this.elem.querySelector('#visa').classList.remove('card-icon')
+        this.elem.querySelector('.visa').classList.add('active')
       } else if (this.mastercardPattern.test(cardNumber)) {
-        this.elem.querySelector('#mastercard').classList.remove('card-icon')
+        this.elem.querySelector('.mastercard').classList.add('active')
       } else if (this.mirPattern.test(cardNumber)) {
-        this.elem.querySelector('#mir').classList.remove('card-icon')
-      } else {
-        this.elem.querySelectorAll('img').forEach(element => {
-          element.classList.add('card-icon')
-        })
+        this.elem.querySelector('.mir').classList.add('active')
       }
     })
   }
@@ -44,7 +44,7 @@ export class Validation {
         sum += digit
         double = !double
       }
-      if (sum % 10 === 0 && cardNumber.length > 0) {
+      if (sum % 10 === 0 && cardNumber.length === 16) {
         this.btn.style.backgroundColor = '#24501b'
         this.btn.textContent = 'Данные валидны'
       } else {

@@ -2,6 +2,9 @@
 dist
 doc
 
+#cache
+.cache
+
 # Logs
 logs
 *.log
